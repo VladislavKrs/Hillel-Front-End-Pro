@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Мастер и Маргарита</title>
+    <style>
+        .accent {
+            color: blueviolet;
+        }
+    </style>
 </head>
 <body>
-    
+    <script>
+    const person = "Мастер";
+
+    const lnFn = ["Прасковья", "Федоровна"];
+    const mainHeroes = {
+        personMain: "Маргарита",
+        mysticPercon: "Бегемот"
+    };
+    const countPerson = lnFn.length; 
+    const listOflnFnWithSpace = lnFn.join(" ");
+
+    document.body.innerHTML = `
+    <p>Убедившись в том, что <span class="accent">${person}</span> один, и прислушавшись, таинственный посетитель ${mainHeroes.personMain} осмелел и вошел в комнату. Тут увидел ${person}, что пришедший одет в больничное. На нем было белье, туфли на босу ногу, на плечи наброшен бурый халат.</p>
+    <p>Пришедший подмигнул ${person}, спрятал в карман связку ключей, шепотом осведомился: «Можно присесть?» – и, получив утвердительный кивок ${mainHeroes.mysticPercon}, поместился в кресле.</p>
+    <p>Как же вы сюда попали? – повинуясь сухому грозящему пальцу, шепотом спросил ${person}, – ведь балконные-то решетки на замках, ${listOflnFnWithSpace}? </p>
+    <p>Решетки-то на замках, – подтвердил гость, – но ${lnFn.join(" ")} – милейший, но, увы, рассеянный человек. Я стащил у нее месяц тому назад связку ключей и, таким образом, получил возможность выходить на общий балкон, а он тянется вокруг всего этажа ${countPerson} , и, таким образом, иногда навестить соседа .</p>
+    `;
+    </script>
 </body>
 </html>
